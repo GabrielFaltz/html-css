@@ -30,7 +30,7 @@ header {
     text-align: center;
     color: white;
     font-family: var(--font-super);
-    font-size: 1.4em;
+    
    
     /* font-variant: small caps é para deixar todas as letras parecendo maiúsculas, mas somente as primeiras realmente dessa forma */  
 }
@@ -38,6 +38,7 @@ header {
 header h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 5vw;
 }
 
 header p {
@@ -57,6 +58,9 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5vw;
+    
 }
 
 
@@ -68,12 +72,34 @@ section.normal {
 section.imagem {
     background-color: rgba(0, 0, 0, 0.445);
     color: white;
+    box-shadow: inset 5px 5px 5px 0 black;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.363);
     color: white;
-    width: 300px;
+    display: inline-block;
+    padding: 20px;
+    text-shadow: 2px 2px 1px black;
+    
+   
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section#imgum {
+background-image: url(imagens/pexels-photo-14686442.jpeg);
+background-position: center bottom;
+background-size: cover;
+}
+
+section#imgdois {
+background-image: url(imagens/pexels-photo2.webp);
+background-size: cover;
+
 }
 
 
@@ -82,7 +108,7 @@ footer {
     color: white;
     text-align: center;
     padding: 8px;
-    margin: -10px;
+    
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -95,5 +121,4 @@ footer {
   footer p a:hover {
     text-decoration: underline;
     color: white;
-    
   }
