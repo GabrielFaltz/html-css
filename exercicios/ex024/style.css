@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+thead, tfoot {
+    background-color: grey;
+    color: white;
+}
+
+thead tr th {
+    position: sticky;
+    top: -1px;
+    background-color: grey;
+}
+
+/* para fazer o efeito do thead descer junto com a rolagem da tela::
+
+coloquei no table position: relative
+coloquei thead tr th com position: sticky
+top: -1px
+e o background color
+
+*/
+
+tbody > tr:nth-child(2n) {
+    background-color: rgba(128, 128, 128, 0.534);
+}
+
+tfoot {
+    text-align: left ;
+}
+
+.num {
+    text-align: right;
+}
