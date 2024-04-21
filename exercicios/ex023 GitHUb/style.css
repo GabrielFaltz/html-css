@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Super';
+    src: url(Fontes/Super\ Sunshine.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgba(169, 169, 169, 0.466);
+}
+
+
+:root {
+    --font-super: 'Super'
+}
+
+header p a:hover {
+    text-decoration: underline;
+
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: var(--font-super);
+    font-size: 1.4em;
+   
+    /* font-variant: small caps é para deixar todas as letras parecendo maiúsculas, mas somente as primeiras realmente dessa forma */  
+}
+
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    padding-bottom: 50px;
+}
+
+header p a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.445);
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.363);
+    color: white;
+    width: 300px;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    margin: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  footer p a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  footer p a:hover {
+    text-decoration: underline;
+    color: white;
+    
+  }
