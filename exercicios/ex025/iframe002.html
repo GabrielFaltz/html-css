@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        iframe {
+            width: 95%;
+            border: 2px solid black;
+            height: 500px;
+            margin: auto;
+            display: block;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serifj;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore beatae, itaque ratione officiis atque error perspiciatis voluptates laboriosam? Sapiente explicabo temporibus aperiam magni natus itaque quasi ipsam dolorem expedita voluptate.</p>
+
+    <ul>
+        <li><a href="pag001.html" target="pagina01">Primeira pagina</a></li>
+        <li><a href="iframe.html" target="pagina01">Segunda pagina</a></li>
+        <li><a href="iframe002.html" target="pagina01">Terceira pagina</a></li>
+    </ul>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1>" frameborder="0" name="pagina01">
+        <p>Infelizmente o seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <!-- o name serve para quando eu direcionar um target para o meu link, o site seja aberto dentro do iframe e nao em outra pagina como no _blanck -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut non ab praesentium soluta molestias numquam adipisci explicabo aspernatur obcaecati vel dicta repellendus quae architecto nam ratione quos, quod corporis recusandae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero nostrum, rem explicabo facilis optio sit officia inventore minima debitis delectus! Reprehenderit ipsam nobis, eum modi animi eaque ea sunt reiciendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quis repellat nesciunt nemo? Quod possimus, voluptas a sequi ipsam similique distinctio porro iure amet quidem laudantium necessitatibus reprehenderit at magnam!</p>
+
+   
+</body>
+</html>
