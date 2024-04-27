@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+    <p>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" required placeholder="Nome Completo" autocomplete="name" required>
+    </p>
+    <p>
+        <label for="imedia">Média</label>
+        <input type="number" name="media" id="imedia" min="0" max="100" step="0.5" required>
+
+        <!-- o step é como se fosse um parametro pra quanto nesse caso o número vai andar -->
+
+        <!-- essa config de min e max eu percebi que só desse jeito para alterar o tamanho da caixa, muito provavelmente por conta dessa input ser number, diferente das outras que eram ou password, ou username PORÉM isso é para definir o numero maximo e mínimo -->
+
+    </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    
+
+</form>
+</body>
+</html>
