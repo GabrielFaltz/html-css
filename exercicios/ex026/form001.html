@@ -8,15 +8,30 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
         }
+
     </style>
 </head>
 <body>
     <h1>Meu primeiro formulario</h1>
-   <form>
-    <p>Nome: <input type="text" name="Nome" id="Nome"></p>
-    <p>Sobrenome: <input type="text" name="Sobrenome" id="Sobrenome"></p>
-    <p><input type="submit" value="Enviar"></p>
+    <form action="cadastro.php" method="post" autocomplete="off">  
+        <p><label for="iNome">Nome</label>: <input type="text" name="Nome" id="iNome"></p>
+
+        <p><label for="iSobrenome">Sobrenome</label>: <input type="text" name="Sobrenome" id="iSobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
    </form>
+
+</body>
+</html>
+
+
+   <!--autocomplete off tira a sugestão para completar o nome auto-->
+
+    <!-- method: post faz parte de php, e basicamente tira as informações de login da barra de pesquisa do usuário PORÉM não é o ideal para garantir a segurança de dados, ja o GET é mais ideal para dados não sensíveis -->
+
+    <!-- OBSERVAÇÃO IMPORTANTE: para linguagens como o php, o name é mais importante, ja para JS por exemplo, o id é mais, tudo isso se tratando obviamente do label para ligar as informações entre objeto e o próprio label-->
+
+    <!-- o action com o cadastro php é para o envio do formulario para a linguagem php-->
 
    <!-- OBSERVAÇÃO: desse jeito o formulário está sem nenhuma funcionalidade, e é a partir daqui que entra o backend -->
 
@@ -25,5 +40,3 @@
    <!-- input:text é para botar a caixinha para escrever no formulario-->
 
    <!-- todo formulario deve estar entre form e /form -->
-</body>
-</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required size="25" placeholder="Nome do usuário" autocomplete="username">
+            <!-- placeholder é como se fosse uma dica para preenchimento dos campos (MUITO interessante) -->
+            <!-- size determina o tamanho da caixa -->
+        </p>
+
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="5" autocomplete="current-password">
+           <!-- required diz que os campos sao obrigatoriose E TAMBÉM CUSTOMIZEI com o mínimo de 5 letras para a senha (minlenght) -->
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        <!-- botão para limpar acima -->
+    </form>
+</body>
+</html>
+
+<!-- input:password é para senhas -->
+
+<!-- para fazer um autocomplete dentro do campo de usuario e senha, é preciso ligar o autocomplete no form e também dentro do input, usando o username e current-password como usei por exemplo -->
