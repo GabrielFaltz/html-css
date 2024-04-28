@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+            <fieldset>
+                <legend>Dados Pessoais</legend> 
+
+                <!-- fieldset é uma config que separa a área dos dados, como fiz nesse arquivo, e a config legend é para adicionar uma legenda para esse campo, ideal para formulários grandes. -->
+
+                <p>
+                    <label for="inome">Nome</label>
+                    <input type="text" name="nome" id="inome" maxlength="30" required>
+                </p>
+                <p>
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" required>
+                </p>
+                <!-- nesse caso tem o autocomplete de email, para mostrar só opções de preenchimento com emails ja digitados -->
+                <p>
+                    <label for="itel">Telefone</label>
+                    <input type="tel" name="Telefone" id="itel" required autocomplete="tel" required>
+                </p>
+                
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+            
+       
+        
+    </form>
+</body>
+</html>

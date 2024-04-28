@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastro.php" method="post">
+<fieldset>
+    <legend>Animes Favoritos</legend>
+
+                <input type="checkbox" name="db" id="idb">Dragon Ball
+                <input type="checkbox" name="jjk" id="ijjk">Jujutsu Kaisen
+                <label for="inar"><input type="checkbox" name="naruto" id="inar">Naruto</label>
+                <label for="ichain"><input type="checkbox" name="chain" id="ichain">Chainsaw Man</label>
+
+                <!-- LABEL: serve para dar mais espaço de clique para quando a pessoa estiver pelo celular, extremamente necessário, ACIMA MOSTREI A DIFERENÇA, basta abrir o arquivo e tentar clicar em cima do nome de cada item -->
+</fieldset>
+
+<fieldset>
+    <legend>Sexo</legend>
+
+    <label for="imas">Masculino</label>
+    <input type="radio" name="sexo" id="imas" value="M">
+    <label for="ifem">Feminino</label>
+    <input type="radio" name="sexo" id="ifem" value="F">
+</fieldset>
+
+<!-- APENAS NA FUNÇÃO RADIO: para o input:radio é necessário que seja o mesmo name, para não ter a confusão da pessoa marcar um sexo errado e depois marcar o certo mas não conseguir desmarcar um deles. -->
+
+<!-- Esse value é apenas para aparecer na barra de pesquisa que foi enviado como sexo M ou sexo F, hoje dia 28/04/2024 não sei qual a utilidade disso, apesar que como deixei o form post, nenhum desses valores aparecerão na barra de pesquisa -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
