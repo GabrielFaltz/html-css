@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+<style>
+    select {
+        background-color: black;
+        color: white;
+    }
+
+</style>
+ 
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+            </select>
+
+            <!-- Acima usei o select para selecionar qual o estado, e option para botar as opções, mas também poderia envelopar os estados de cada região com OPTGROUP para separar estados de cada região -->
+        </p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="Profissão" id="iprof" list="ilist">
+            <datalist id="ilist">
+                <option>Administrador</option>
+                <option>Médico</option>
+                <option>Desenvolvedor</option>
+                <option>Bombeiro</option>
+            </datalist>
+
+            <!-- Essa lista que fiz acima com o datalist e option é para criar uma lista de opções para quando a pessoa clicar, aparerecer. MAS para isso eu precisei criar um id novamente em datalist e um "list" no input -->
+
+            <p>
+                <label for="imsg">Mensagem:</label><br>
+                <textarea name="msg" id="imsg" cols="100" rows="10"></textarea>
+                <!-- o textarea é para o usuário escrever alguma mensagem-->
+
+            </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
