@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    background-color: lightgrey;
+}
+
+header {
+    background-color: grey;
+
+}
+
+header h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+menu {
+    display: none;
+}
+
+/* acima usei a config para tirar o menu antes de clicar */
+
+menu ul {
+    list-style-type: none;
+}
+
+menu ul li a {
+    padding: 10px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: block;
+    border: 1px solid gray;
+}
+
+menu ul li a:hover {
+    background-color: lightgray;
+}
+
+main {
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+article h2 {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+article p {
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.material-symbols-outlined {
+    background-color: darkgrey;
+    color: white;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+.material-symbols-outlined:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+/* fiz a importação do menu hamburguinho do site do google icons, e também usei essa questão do cursor: pointer para deixar o cursor com uma mãozinha quando passar em cima do icon */
