@@ -5,3 +5,4 @@
 <a href="https://gabrielfaltz.github.io/html-css/exercicios/ex001/index.html">Executar o exercicio 001</a>
 <a href="https://gabrielfaltz.github.io/html-css/exercicios/ex023 GitHUb/fundo004.html">Executar o exercicio 023</a>
 <a href="https://gabrielfaltz.github.io/html-css/exercicios/ex023 GitHUb/CordelModerno2.html">Cordel Moderno</a>
+<a href="https://gabrielfaltz.github.io/html-css/exercicios/ex027/mq004/index.html">Media Query</a>
